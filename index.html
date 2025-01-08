@@ -31,21 +31,25 @@
       width: 350px;
       height: 50px;
     }
-    @media screen and (min-width: 768px) {
-      #bgimg {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/dngn2hghx/image/upload/v1735280733/fqlyb7kjln1onsxkzb83.jpg);
-      background-repeat: no-repeat;
-      background-size:1500px 550px;
-    }
-    @media screen and (max-width:480px) {
-      #bgimg {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/dngn2hghx/image/upload/v1735280733/fqlyb7kjln1onsxkzb83.jpg);
-      background-repeat: no-repeat;
-      background-size:auto;
-    }
-    }
-      
-    }
+    #bgimg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/dngn2hghx/image/upload/v1735280733/fqlyb7kjln1onsxkzb83.jpg);
+  background-repeat: no-repeat;
+}
+
+/* For screens with a minimum width of 768px (laptops and larger devices) */
+@media screen and (min-width: 768px) {
+  #bgimg {
+    background-size: 1500px 550px;  /* Adjust the background size for larger screens */
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+  #bgimg {
+    background-size: auto;  /* Adjust the background size to 'auto' for smaller screens */
+  }
+}
+
   </style>
 </head>
 <body>
