@@ -49,7 +49,7 @@
     background-size: auto;  /* Set the background size to fit mobile devices */
   }
   textarea{
-      width: 330px;
+      width: 320px;
       height: 50px;
     }
 }
@@ -70,7 +70,7 @@
 
   <hr>
   <form action="https://script.google.com/macros/s/AKfycbzjs_00X8lVaYO7vCyBoFcb7d34BvjVDbZmBmhWL0MUTx95wfERNPAKbQivDzNLRfcT/exec" method="post" class="p-2" id="questionnaireForm">
-    <h2 class="text-center text-success">Visit Report</h2>
+    <h2 class="text-center text-success">Customer Visit Report</h2>
     <div class="row" id="bgimg">
       <div class="col-md-4 col-sm-12">
         <div class="container-fluid">
@@ -83,7 +83,7 @@
       <!-- Yes or No Questions -->
       <div class="col-md-4 col-sm-12">
         <div class="form-group">
-          <label for="leads">Leads Through</label>
+          <label for="leads">Lead Obtained by</label>
           <select class="form-control" id="leads" name="leads" style="width: 89%;" required>
             <option value="" selected disabled>Select Option</option>
             <option value="Email">Email</option>
@@ -91,7 +91,7 @@
           </select>
         </div>
         <div class="form-group" class="mx-auto align-items-center justify-content-center">
-          <label for="q3" >Company Block Detatils</label><br>
+          <label for="q3" >Company Detatils</label><br>
           <textarea name="q3" id="q3" required></textarea>
           
         </div>
@@ -110,18 +110,22 @@
 
         <div class="col-md-4 col-sm-12">
             <div class="form-group">
-                <label for="q6">Certification</label><br>
+                <label for="q6">Other</label><br>
                 <textarea name="q6" id="q6" required></textarea>
               </div>
-      
               <div class="form-group">
-                <label for="q7">Next Steps</label><br>
+                <label for="q7">Certification Requirements</label><br>
                 <textarea name="q7" id="q7" required></textarea>
               </div>
       
               <div class="form-group">
-                <label for="q8">General</label><br>
+                <label for="q8">Next Steps</label><br>
                 <textarea name="q8" id="q8" required></textarea>
+              </div>
+      
+              <div class="form-group">
+                <label for="q9">General</label><br>
+                <textarea name="q9" id="q9" required></textarea>
               </div>
         </div>
 
