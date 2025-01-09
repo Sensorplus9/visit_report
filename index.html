@@ -46,7 +46,7 @@
 /* For screens with a maximum width of 480px (mobile devices) */
 @media screen and (max-width: 480px) {
   #bgimg {
-    background-size: auto;  /* Set the background size to fit mobile devices */
+    background-size: 480px 320px;  /* Set the background size to fit mobile devices */
   }
 }
 
@@ -54,10 +54,11 @@
   </style>
 </head>
 <body>
-  <div class="row container-fluid align-items-center justify-content-center justify-content-around">
-    <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735274935/tcqveo4uax4sxl4c2svj.jpg" alt="logo" class="img-fluid p-1 col-md-2 col-sm-4 " style="height: 20%;">
-    <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735291421/cvmdyxlphyoiawcnajxh.jpg" alt="logo" class="img-fluid p-1 col-md-2 col-sm-4 ">
-  </div>
+ <div class="row container-fluid align-items-center justify-content-center justify-content-around">
+  <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735274935/tcqveo4uax4sxl4c2svj.jpg" alt="logo" class="img-fluid col-md-2 col-sm-4 w-100">
+  <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1735291421/cvmdyxlphyoiawcnajxh.jpg" alt="logo" class="img-fluid col-md-2 col-sm-4 w-100">
+</div>
+
   <hr>
   <form action="https://script.google.com/macros/s/AKfycbzjs_00X8lVaYO7vCyBoFcb7d34BvjVDbZmBmhWL0MUTx95wfERNPAKbQivDzNLRfcT/exec" method="post" class="p-2" id="questionnaireForm">
     <h2 class="text-center text-success">Visit Report</h2>
@@ -74,7 +75,7 @@
       <div class="col-md-4 col-sm-12">
         <div class="form-group">
           <label for="leads">Leads Through</label>
-          <select class="form-control" id="leads" name="leads" required>
+          <select class="form-control" id="leads" name="leads" style="width: 89%;" required>
             <option value="" selected disabled>Select Option</option>
             <option value="Email">Email</option>
             <option value="Telephone">Telephone</option>
